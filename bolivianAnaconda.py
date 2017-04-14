@@ -2,7 +2,7 @@ import random
 from snake import *
 
 # Barva glave in repa
-COLOR_HEAD = 'red'
+COLOR_HEAD = '#00FF00'
 COLOR_TAIL = 'orange'
 
 class BolivianAnaconda(Snake):

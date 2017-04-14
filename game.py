@@ -9,11 +9,17 @@ import random
 from bolivianAnaconda import BolivianAnaconda
 from rosyBoa import RosyBoa
 
+from indianBoa import IndianBoa
+
+
 # List of snakes
 
 SNAKES = [
     BolivianAnaconda,
+
     RosyBoa,
+    IndianBoa,
+
 ]
 
 # Do not touch anything from here on.
