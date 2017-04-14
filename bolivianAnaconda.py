@@ -3,7 +3,7 @@ from snake import *
 
 # Barva glave in repa
 COLOR_HEAD = 'red'
-COLOR_TAIL = 'orange'
+COLOR_TAIL = 'white'
 
 class BolivianAnaconda(Snake):
     def __init__(self, field, x, y, dx, dy):

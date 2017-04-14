@@ -16,7 +16,7 @@ def brick(canvas, x, y):
 def mouse(canvas, x, y):
     """Ustvari graficni element, ki predstavlja misko."""
     return canvas.create_oval(x*BLOCK+2, y*BLOCK+2, (x+1)*BLOCK-2, (y+1)*BLOCK-2,
-                              fill = 'gray')
+                              fill = 'black')
 
 # Razredi
 
