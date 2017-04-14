@@ -7,11 +7,13 @@ import random
 # Add your snake here
 
 from bolivianAnaconda import BolivianAnaconda
+from rosyBoa import RosyBoa
 
 # List of snakes
 
 SNAKES = [
     BolivianAnaconda,
+    RosyBoa,
 ]
 
 # Do not touch anything from here on.
@@ -46,13 +48,13 @@ class SnakeGame():
         self.tick()
 
     def tick(self):
-        if self.time % 4 == 0:
+        if self.time % 10 == 0:
             self.field.new_mouse()
         for s in self.field.snakes:
             s.turn()
             s.move()
         self.time += 1
-        self.canvas.after(5, self.tick)
+        self.canvas.after(40, self.tick)
         
 # Main program
 root = Tk()
