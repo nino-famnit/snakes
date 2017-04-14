@@ -7,11 +7,11 @@ import random
 # Add your snake here
 
 from bolivianAnaconda import BolivianAnaconda
-
+from ribbonSnake import RibbonSnake
 # List of snakes
 
 SNAKES = [
-    BolivianAnaconda,
+    BolivianAnaconda, RibbonSnake
 ]
 
 # Do not touch anything from here on.
@@ -52,7 +52,7 @@ class SnakeGame():
             s.turn()
             s.move()
         self.time += 1
-        self.canvas.after(5, self.tick)
+        self.canvas.after(4, self.tick)
         
 # Main program
 root = Tk()
